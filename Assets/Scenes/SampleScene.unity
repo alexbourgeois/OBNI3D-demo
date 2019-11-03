@@ -120,6 +120,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &215916822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215916824}
+  - component: {fileID: 215916823}
+  m_Layer: 0
+  m_Name: NoiseVolume mask
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &215916823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215916822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378c25ab0ad6f0a40a082ab2f4597c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SyncWithCPU: 0
+  timeType: 0
+  volumeType: 1
+  volumeShape: 2
+  falloffRadius: 0.14
+  volumeTransformAffectsNoise: 0
+  intensity: 1
+  valueRemappingType: 0
+  blendOperator: 1
+  noiseType: 2
+  seed: 35453
+  offset: 0
+  scale: 1
+  speed: {x: 0, y: 0, z: 0.1}
+  speedSpace: 0
+  octave: 1
+  octaveScale: 2
+  octaveAttenuation: 0.5
+  jitter: 1
+--- !u!4 &215916824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215916822}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.17, y: 0, z: 0}
+  m_LocalScale: {x: 1.1026574, y: 4.3037653, z: 4.4357123}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &658527883
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,8 +460,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069216602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4045, y: 2.4045, z: 2.4045}
+  m_LocalPosition: {x: 0.17, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -413,23 +475,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 1069216602}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32ad6df1231649c4e91c24ae2e0c6156, type: 3}
+  m_Script: {fileID: 11500000, guid: 378c25ab0ad6f0a40a082ab2f4597c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noiseType: 2
-  intensity: 1
-  falloffRadius: 0.4
+  SyncWithCPU: 0
+  timeType: 0
+  volumeType: 0
+  volumeShape: 1
+  falloffRadius: 0.96
   volumeTransformAffectsNoise: 0
-  scale: 5
+  intensity: 1
+  valueRemappingType: 0
+  blendOperator: 1
+  noiseType: 2
+  seed: 35453
   offset: 0
-  speed: {x: 0, y: 0.5, z: 0.5}
+  scale: 1
+  speed: {x: 0, y: 0, z: 0.1}
   speedSpace: 0
   octave: 1
   octaveScale: 2
   octaveAttenuation: 0.5
   jitter: 1
-  UseCPUClock: 1
-  timeType: 0
 --- !u!1 &1491346929
 GameObject:
   m_ObjectHideFlags: 0
